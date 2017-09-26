@@ -12,6 +12,8 @@ namespace Easy_Calculator
 {
     public partial class MainForm : Form
     {
+        Model _model = new Model();
+
         public MainForm()
         {
             InitializeComponent();
