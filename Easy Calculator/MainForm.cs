@@ -18,5 +18,62 @@ namespace Easy_Calculator
         {
             InitializeComponent();
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            CreateNumberButtons();            
+        }
+
+        private void CreateNumberButtons()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Button button = new Button()
+                {
+                    Margin = new Padding(20),
+                    Dock= DockStyle.Fill,
+                    Text = i + ""
+                };
+                button.Click += ClickNumberButton;
+                _numbersTableLayoutPanel.Controls.Add(button);
+            }
+        }
+
+        private void ClickNumberButton(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            _monitorLabel.Text = _monitorLabel.Text + button.Text;
+        }
+
+        private void ClickResultButton(object sender, EventArgs e)
+        {
+            int number = 0;
+            int.TryParse(_monitorLabel.Text, out number);
+            _model.DoOperation(number);
+            int result = _model.GetResult();
+            _monitorLabel.Text = result + "";
+        }
+
+        private void ClickPlusButton(object sender, EventArgs e)
+        {
+            int number = 0;
+            int.TryParse(_monitorLabel.Text, out number);
+            //int number = int.Parse(_monitorLabel.Text);
+            _model.SetPlusMode(number);
+            _monitorLabel.Text = "";
+        }
+
+        private void ClickMinusButton(object sender, EventArgs e)
+        {
+            int number = 0;
+            int.TryParse(_monitorLabel.Text, out number);
+            _model.SetMinusMode(number);
+            _monitorLabel.Text = "";
+        }
+
+        private void ClickClearButton(object sender, EventArgs e)
+        {
+            _monitorLabel.Text = "";
+        }
     }
 }
