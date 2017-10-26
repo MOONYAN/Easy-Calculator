@@ -96,6 +96,7 @@
             // 
             // button1
             // 
+            this.button1.AccessibleName = "C";
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(20, 20);
@@ -109,6 +110,7 @@
             // 
             // button2
             // 
+            this.button2.AccessibleName = "+";
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(20, 129);
@@ -122,6 +124,7 @@
             // 
             // button3
             // 
+            this.button3.AccessibleName = "-";
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(20, 238);
@@ -135,6 +138,7 @@
             // 
             // button4
             // 
+            this.button4.AccessibleName = "=";
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(20, 347);
@@ -148,6 +152,7 @@
             // 
             // _monitorLabel
             // 
+            this._monitorLabel.AccessibleName = "Monitor";
             this._monitorLabel.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this._monitorLabel, 2);
             this._monitorLabel.Dock = System.Windows.Forms.DockStyle.Fill;

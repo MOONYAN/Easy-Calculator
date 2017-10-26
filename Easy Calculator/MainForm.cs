@@ -21,7 +21,7 @@ namespace Easy_Calculator
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            CreateNumberButtons();            
+            CreateNumberButtons();
         }
 
         private void CreateNumberButtons()
@@ -31,8 +31,9 @@ namespace Easy_Calculator
                 Button button = new Button()
                 {
                     Margin = new Padding(20),
-                    Dock= DockStyle.Fill,
-                    Text = i + ""
+                    Dock = DockStyle.Fill,
+                    Text = i + "",
+                    AccessibleName = i + ""
                 };
                 button.Click += ClickNumberButton;
                 _numbersTableLayoutPanel.Controls.Add(button);
