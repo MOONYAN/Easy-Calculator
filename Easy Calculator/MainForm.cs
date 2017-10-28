@@ -76,5 +76,10 @@ namespace Easy_Calculator
         {
             _monitorLabel.Text = "";
         }
+
+        private void calculatorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Fuck", "Caption");
+        }
     }
 }
