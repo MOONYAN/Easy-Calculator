@@ -32,6 +32,14 @@ namespace Easy_Calculator
             }
             _comboBox.DataSource = contents;
             _comboBox.SelectedValueChanged += Combo_SelectedValueChanged;
+            _numericUpDown.ValueChanged += Numeric_ValueChanged;
+            _linkLabel.LinkClicked += linkLabel_LinkClicked;
+        }
+
+        private void Numeric_ValueChanged(object sender, EventArgs e)
+        {
+            var numeric = sender as NumericUpDown;
+            _replyLabel.Text = "echo:" + numeric.Value;
         }
 
         private void Combo_SelectedValueChanged(object sender, EventArgs e)
@@ -44,6 +52,11 @@ namespace Easy_Calculator
         {
             var radio = sender as RadioButton;
             _replyLabel.Text = "echo:" + radio.Text;
+        }
+
+        private void linkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://google.com");
         }
     }
 }
