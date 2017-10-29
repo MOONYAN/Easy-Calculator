@@ -20,6 +20,15 @@ namespace Easy_Calculator
         private void EchoForm_Load(object sender, EventArgs e)
         {
             string[] contents = { "NTUT", "CSIE", "SDT" };
+            CreateRadios(contents);
+            _comboBox.DataSource = contents;
+            _comboBox.SelectedValueChanged += Combo_SelectedValueChanged;
+            _numericUpDown.ValueChanged += Numeric_ValueChanged;
+            _linkLabel.LinkClicked += linkLabel_LinkClicked;
+        }
+
+        private void CreateRadios(string[] contents)
+        {
             foreach (var element in contents)
             {
                 RadioButton radio = new RadioButton()
@@ -30,10 +39,6 @@ namespace Easy_Calculator
                 radio.Click += Radio_Click;
                 _radioTableLayoutPanel.Controls.Add(radio);
             }
-            _comboBox.DataSource = contents;
-            _comboBox.SelectedValueChanged += Combo_SelectedValueChanged;
-            _numericUpDown.ValueChanged += Numeric_ValueChanged;
-            _linkLabel.LinkClicked += linkLabel_LinkClicked;
         }
 
         private void Numeric_ValueChanged(object sender, EventArgs e)
