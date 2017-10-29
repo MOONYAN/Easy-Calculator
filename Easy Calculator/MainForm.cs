@@ -12,6 +12,7 @@ namespace Easy_Calculator
 {
     public partial class MainForm : Form
     {
+        Form _echoForm;
         Model _model = new Model();
 
         public MainForm()
@@ -80,6 +81,13 @@ namespace Easy_Calculator
         private void calculatorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Fuck", "Caption");
+        }
+
+        private void testToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _echoForm?.Close();
+            _echoForm = new EchoForm();
+            _echoForm.Show();
         }
     }
 }
