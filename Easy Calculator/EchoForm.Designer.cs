@@ -30,6 +30,7 @@
         {
             this._replyLabel = new System.Windows.Forms.Label();
             this._radioTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this._comboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // _replyLabel
@@ -56,11 +57,21 @@
             this._radioTableLayoutPanel.Size = new System.Drawing.Size(200, 100);
             this._radioTableLayoutPanel.TabIndex = 1;
             // 
+            // _comboBox
+            // 
+            this._comboBox.AccessibleName = "ComBo";
+            this._comboBox.FormattingEnabled = true;
+            this._comboBox.Location = new System.Drawing.Point(108, 202);
+            this._comboBox.Name = "_comboBox";
+            this._comboBox.Size = new System.Drawing.Size(121, 21);
+            this._comboBox.TabIndex = 2;
+            // 
             // EchoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this._comboBox);
             this.Controls.Add(this._radioTableLayoutPanel);
             this.Controls.Add(this._replyLabel);
             this.Name = "EchoForm";
@@ -75,5 +86,6 @@
 
         private System.Windows.Forms.Label _replyLabel;
         private System.Windows.Forms.TableLayoutPanel _radioTableLayoutPanel;
+        private System.Windows.Forms.ComboBox _comboBox;
     }
 }

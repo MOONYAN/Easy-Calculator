@@ -30,7 +30,16 @@ namespace Easy_Calculator
                 radio.Click += Radio_Click;
                 _radioTableLayoutPanel.Controls.Add(radio);
             }
+            _comboBox.DataSource = contents;
+            _comboBox.SelectedValueChanged += Combo_SelectedValueChanged;
         }
+
+        private void Combo_SelectedValueChanged(object sender, EventArgs e)
+        {
+            var combo = sender as ComboBox;
+            _replyLabel.Text = "echo:" + combo.SelectedValue;
+        }
+
         private void Radio_Click(object sender, EventArgs e)
         {
             var radio = sender as RadioButton;
