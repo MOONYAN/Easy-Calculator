@@ -45,14 +45,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DefaultOperate.cs" />
+    <Compile Include="EchoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EchoForm.Designer.cs">
+      <DependentUpon>EchoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IOperate.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MinusOperate.cs" />
+    <Compile Include="Model.cs" />
+    <Compile Include="PlusOperate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EchoForm.resx">
+      <DependentUpon>EchoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
