@@ -18,7 +18,7 @@ namespace GUITEST_Tutorial
     [CodedUITest]
     public class MainFormUITest
     {
-        const string FILE_PATH = @"../../../Easy Calculator.exe";
+        const string FILE_PATH = @"Easy Calculator.exe";
         private const string CALCULATOR_TITLE = "MainForm";
         private const string EXPECTED_VALUE = "444";
         private const string RESULT_CONTROL_NAME = "Monitor";

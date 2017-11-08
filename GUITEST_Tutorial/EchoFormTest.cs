@@ -18,7 +18,7 @@ namespace GUITEST_Tutorial
     [CodedUITest]
     public class EchoFormTest
     {
-        const string FILE_PATH = @"../../../Easy Calculator.exe";
+        const string FILE_PATH = @"Easy Calculator.exe";
         const string START_UP_FORM_NAME = "MainForm";
         const string TARGET_FORM_NAME = "EchoForm";
 
