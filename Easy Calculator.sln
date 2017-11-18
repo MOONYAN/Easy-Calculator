@@ -1,9 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easy Calculator", "Easy Calculator\Easy Calculator.csproj", "{BD60B3AE-1C64-45AB-9BA5-DFE479F7C284}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUITEST_Tutorial", "GUITEST_Tutorial\GUITEST_Tutorial.csproj", "{67E91DCC-3ADD-45BE-8AE0-CAFDF2603778}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BD60B3AE-1C64-45AB-9BA5-DFE479F7C284} = {BD60B3AE-1C64-45AB-9BA5-DFE479F7C284}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1625BC01-829B-4F7C-A3B0-A87924E6E6DC}"
+	ProjectSection(SolutionItems) = preProject
+		local.testsettings = local.testsettings
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,10 @@ Global
 		{BD60B3AE-1C64-45AB-9BA5-DFE479F7C284}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD60B3AE-1C64-45AB-9BA5-DFE479F7C284}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD60B3AE-1C64-45AB-9BA5-DFE479F7C284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67E91DCC-3ADD-45BE-8AE0-CAFDF2603778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E91DCC-3ADD-45BE-8AE0-CAFDF2603778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E91DCC-3ADD-45BE-8AE0-CAFDF2603778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E91DCC-3ADD-45BE-8AE0-CAFDF2603778}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
